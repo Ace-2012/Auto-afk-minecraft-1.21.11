@@ -4,13 +4,13 @@
   "version": "${version}",
   "name": "AFK Auto-Reconnect",
   "description": "Verbindet nach einem Disconnect automatisch neu und sendet danach /afk.",
-  "authors": ["Ben"],
+  "authors": ["Snoopy"],
   "contact": {},
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "de.ben.afkreconnect.AfkReconnectClient"
+      "de.snoopy.afkreconnect.AfkReconnectClient"
     ]
   },
   "depends": {
