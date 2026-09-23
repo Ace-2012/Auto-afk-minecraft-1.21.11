@@ -50,7 +50,7 @@ public class AfkReconnectClient implements ClientModInitializer {
                 "key.afkreconnect.toggle",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_UNKNOWN, // Standardmäßig nicht belegt -> im Steuerungsmenü selbst zuweisen
-                "category.afkreconnect"
+                CATEGORY
         ));
 
         // Erfolgreich (neu) verbunden -> Server merken, /afk vorbereiten
