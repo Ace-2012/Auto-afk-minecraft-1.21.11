@@ -1,4 +1,4 @@
-package de.ben.afkreconnect;
+package de.snoopy.afkreconnect;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
