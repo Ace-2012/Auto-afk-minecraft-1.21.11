@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "afkreconnect",
+  "version": "${version}",
+  "name": "AFK Auto-Reconnect",
+  "description": "Verbindet nach einem Disconnect automatisch neu und sendet danach /afk.",
+  "authors": ["Ben"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.ben.afkreconnect.AfkReconnectClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*"
+  }
+}
