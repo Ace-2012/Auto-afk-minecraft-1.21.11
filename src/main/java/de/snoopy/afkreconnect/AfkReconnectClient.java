@@ -3,6 +3,7 @@ package de.snoopy.afkreconnect;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.TitleScreen;
@@ -30,6 +31,7 @@ public class AfkReconnectClient implements ClientModInitializer {
     private static final int MAX_RECONNECT_ATTEMPTS = 30;   // danach aufgeben (z.B. falls Server dauerhaft down/Ban)
     // --------------------------------------------------------------
 
+    private static final KeyBinding.Category CATEGORY = KeyBinding.Category.create(Identifier.of("afkreconnect", "main"));
     private static KeyBinding toggleKey;
     private static boolean enabled = true;
 
